@@ -328,13 +328,14 @@
 
                     function loadProjectDetails(projectId) {
                         // Example project details, replace with actual content
-						// can we put the details on the next page or its own page?						
-						// Also I'd like to add screenshots of the projects (raw data, SQL queries, Power BI queries, table view, dashboards, Pivot tables, etc.)
+                        // can we put the details on the next page or its own page?
+                        // Also I'd like to add screenshots of the projects (raw data, SQL queries, Power BI queries, table view, dashboards, Pivot tables, etc.)
                         const projectDetails = {
                             project1: {
                                 title: 'Invoice Analysis',
                                 context: 'Identifying the circumstances around the 5% annual loss of revenue.',
-                                presentationFile: 'path/to/presentation.pdf',
+                                presentationFile: 'Datasets/Yellevate/Yellevate Dispute Analysis.ver02.pdf',
+                                documentationFile: 'Datasets/Yellevate/Yellevate Work Documentation.pdf',
                                 video: 'path/to/video.mp4'
                             },
                             // Add more projects as needed
@@ -346,6 +347,7 @@
                                 <h3>${project.title}</h3>
                                 <p>${project.context}</p>
                                 <p><a href="${project.presentationFile}" target="_blank">View Presentation</a></p>
+                                <p><a href="${project.documentationFile}" target="_blank">View Documentation</a></p>
                                 <video controls>
                                     <source src="${project.video}" type="video/mp4">
                                     Your browser does not support the video tag.
